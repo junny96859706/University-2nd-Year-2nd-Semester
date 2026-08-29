@@ -1,0 +1,41 @@
+# ==========================================
+# C / C++ & Visual Studio
+# ==========================================
+.vs/
+Debug/
+Release/
+x64/
+x86/
+*.exe
+*.obj
+*.pdb
+*.user
+
+# ==========================================
+# Python
+# ==========================================
+__pycache__/
+*.py[cod]
+*$py.class
+.venv/
+env/
+venv/
+
+# ==========================================
+# Java & IDEs (IntelliJ, Eclipse, VS Code)
+# ==========================================
+*.class
+*.jar
+*.war
+bin/
+build/
+.gradle/
+.idea/
+*.iml
+.settings/
+.classpath
+.project
+
+# OS / System
+.DS_Store
+Thumbs.db
