@@ -37,5 +37,6 @@ build/
 .project
 
 # OS / System
+*.pem
 .DS_Store
 Thumbs.db
