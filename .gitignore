@@ -32,9 +32,10 @@ build/
 .gradle/
 .idea/
 *.iml
+# 수정 후 (.classpath와 .project는 Git에 올라가도록 주석 처리)
 .settings/
-.classpath
-.project
+#.classpath
+#.project
 
 # OS / System
 *.pem
