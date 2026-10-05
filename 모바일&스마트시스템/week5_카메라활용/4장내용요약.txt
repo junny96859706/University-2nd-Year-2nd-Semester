@@ -1,0 +1,50 @@
+[4장 라즈베리파이 카메라 활용]
+
+4.1 카메라 소개
+- 라즈베리파이용 카메라는 파이 카메라와 USB 카메라 2종류가 있음
+- 파이 카메라는 CSI 소켓에 연결되는 전용 소형 카메라임
+- USB 카메라는 라즈베리파이의 USB 포트에 연결하여 다양한 해상도(SD, HD, FHD, 4K)를 지원함
+
+
+4.2 VNC를 활용한 라즈베리파이에 원격 접속
+- VNC(Virtual Network Computing): 원격에서 동일한 GUI 화면을 보며 마우스와 키보드를 사용하는 기술
+- raspi-config 명령어를 통해 라즈베리파이의 VNC 서버(Wayvnc/X11)를 활성화
+- PC에서 RealVNC Viewer를 설치한 후 라즈베리파이 IP 주소 및 계정 정보를 입력하여 원격 접속 및 데스크톱 GUI 활용
+
+
+4.3 USB 카메라 제어
+- lsusb 명령어로 라즈베리파이에 연결된 USB 카메라 장치 정상 인식 여부 확인
+- fswebcam 패키지 설치: sudo apt-get install fswebcam
+- fswebcam image.jpg 명령을 통해 USB 카메라로 사진을 촬영하고 파일로 저장
+- 다양한 옵션 활용: -r 640x480 (해상도 지정), --rotate 180 (180도 회전) 등
+
+
+4.4 파이썬 가상환경
+- 독립된 파이썬 실행 환경을 제공하여 패키지/라이브러리 간의 버전 충돌 문제 방지
+- 가상환경 생성: python -m venv myenv
+- 가상환경 활성화: source myenv/bin/activate (프롬프트 앞에 (myenv) 표시)
+- 가상환경 비활성화: deactivate
+- pip 명령어를 통해 가상환경 내 패키지 설치(install), 삭제(uninstall), 목록 확인(list) 관리
+
+
+4.5 OpenCV로 카메라 제어
+- OpenCV(Open Source Computer Vision Library): 컴퓨터 비전 및 기계 학습 라이브러리
+- 가상환경 내 설치: pip install opencv-python (또는 opencv-contrib-python)
+- cv2.VideoCapture(0, cv2.CAP_V4L) 객체를 생성하여 카메라 프레임 캡처
+- cv2.imread() / cv2.imshow() / cv2.imwrite() / cv2.destroyAllWindows() 주요 함수 활용
+- VideoCapture의 버퍼 동작 원리 이해: read() 호출 속도와 버퍼 공급 속도 불일치 시 카메라 지연(Delay) 발생
+- camera.grab() 함수를 반복 호출하여 버퍼에 쌓인 과거 프레임을 모두 버리고 현재 시점의 프레임을 획득하여 딜레이 해결
+
+
+4.6 카메라로 얼굴 인식
+- Haar Cascades: 머신러닝 기반의 물체 및 얼굴 인식 알고리즘
+- GitHub에서 학습 모델 xml 파일 다운로드 (haarcascade_frontalface_default.xml)
+- cv2.CascadeClassifier()로 검출 객체 생성
+- BGR 컬러 이미지를 cv2.cvtColor()로 흑백(GrayScale) 변환 후 classifier.detectMultiScale()을 실행하여 얼굴 좌표(x, y, w, h) 배열 획득
+- cv2.rectangle()을 이용해 검출된 faces 영역에 노란색(0, 255, 255) 사각형 박스를 그려 실시간 추적 화면 표시 (4-6.py 실습)
+
+
+[트러블슈팅]
+- AttributeError: module 'cv2' has no attribute 'CascadeClassifier'
+- 원인: 클래스명 대소문자 오타 또는 가상환경 내 opencv 패키지 설치 꼬임
+- 해결: pip uninstall opencv-python opencv-contrib-python -y 실행 후 pip install opencv-contrib-python 재설치
