@@ -19,17 +19,25 @@ public class ColorPoint extends Point{
 		this.color = color;
 	}
 	
-	protected void changeColor(String color) {
+	protected void setColor(String color) {
 		this.color = color;
 	}
 	
 	@Override
 	public String toString() {
-		return "color + "색의 " + "(" +
+		return color + "색의 " + "(" + getX() + "," + getY() + ")의 점입니다.";
+	}
+	
+	public void setXY(int x,int y) {
+		move(x,y);
 	}
 		
 	public static void main(String[] args) {
-		
+		ColorPoint cp = new ColorPoint(5,5,"RED");
+		cp.setXY(10,20);
+		cp.setColor("BLUE");
+		String str = cp.toString();
+		System.out.println(str);
 		
 	}
 
