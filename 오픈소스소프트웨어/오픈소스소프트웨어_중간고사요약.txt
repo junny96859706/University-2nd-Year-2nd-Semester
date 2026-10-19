@@ -384,7 +384,7 @@
   * sed -i 's/foo/bar/g' file.txt (-i: 원본 파일 자체를 덮어씀. 백업용: sed -i.bak)
 - awk (필드 기반 처리): 공백/구분자 기준 열(column) 단위 추출
   * awk '{print $1}' access.log (첫 번째 필드인 IP 주소만 출력)
-  * $1: 1번째 필드, $NF: 마지막 필드
+  * $1: 1번째 필드, $NF: 마지막 필드 (Number Of Filed라서 제일 끝을 가르킨다!!!)
 
 
 <8. 압축 관리 (tar) & 셸 스크립트>
