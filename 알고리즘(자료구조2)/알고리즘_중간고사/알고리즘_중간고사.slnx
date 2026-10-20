@@ -1,0 +1,23 @@
+<Solution>
+  <Configurations>
+    <Platform Name="x64" />
+    <Platform Name="x86" />
+  </Configurations>
+  <Project Path="../10장_깊이우선탐색_인접행렬버전/10장_깊이우선탐색_인접행렬버전.vcxproj" />
+  <Project Path="../10장_너비우선탐색_인접행렬버전/10장_너비우선탐색_인접행렬버전.vcxproj" />
+  <Project Path="../10주차_연결성분_추가강의/10주차_연결성분_추가강의.vcxproj" />
+  <Project Path="../11장_dijkstra_실제경로심화/11장_dijkstra_실제경로심화.vcxproj" />
+  <Project Path="../11장_dijkstra_최단경로/11장_dijkstra_최단경로.vcxproj" />
+  <Project Path="../11장_floyd_실제경로심화/11장_floyd_실제경로심화.vcxproj" />
+  <Project Path="../11장_floyd_최단경로/11장_floyd_최단경로.vcxproj" />
+  <Project Path="../11장_kruskal_최소비용신장트리_탐욕적/11장_kruskal_최소비용신장트리_탐욕적.vcxproj" />
+  <Project Path="../11장_prim_최소비용신장트리_인접정점/11장_prim_최소비용신장트리_인접정점.vcxproj" />
+  <Project Path="../11장_위상정렬/11장_위상정렬.vcxproj" />
+  <Project Path="../8장_레벨순회/8장_레벨순회.vcxproj" />
+  <Project Path="../8장_이진탐색_영어사전/8장_이진탐색_영어사전.vcxproj" />
+  <Project Path="../8장_이진탐색트리/8장_이진탐색트리.vcxproj" />
+  <Project Path="../8장_전위,중위,후위순회(링크법)/8장_전위,중위,후위순회(링크법).vcxproj" />
+  <Project Path="../9장_최대히프/9장_최대히프.vcxproj" />
+  <Project Path="../9장_최소히프/9장_최소히프.vcxproj" />
+  <Project Path="../9장_허프만코드/9장_허프만코드.vcxproj" />
+</Solution>
