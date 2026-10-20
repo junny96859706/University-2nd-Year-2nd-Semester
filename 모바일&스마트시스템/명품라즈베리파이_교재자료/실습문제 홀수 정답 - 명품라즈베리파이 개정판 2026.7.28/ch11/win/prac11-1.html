@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>년도별 나의 학점 차트</title>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.min.js"
+		type="text/javascript"></script>
+	<script src="prac11-1.js" type="text/javascript"></script>
+	<script>
+		window.addEventListener("load", drawChart); // load 이벤트가 발생하면 drawChart() 호출하도록 등록
+	</script>
+	<style>
+		canvas {background-color:yellow}
+	</style>
+</head>
+<body>
+	<h3>과목별 성적</h3>
+	<hr>
+	<canvas id="canvas" width="320" height="240"></canvas>
+</body>
+</html>

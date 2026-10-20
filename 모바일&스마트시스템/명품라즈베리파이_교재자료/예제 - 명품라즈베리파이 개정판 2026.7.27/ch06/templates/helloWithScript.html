@@ -1,0 +1,21 @@
+<!doctype html>
+<html>
+<head>
+	<title>Script 사용하기</title>
+</head>
+<body>
+     <h2>Script 사용하기</h2>
+ <hr>
+ <h2>Hello,
+{% if(name == 'jmlee'): %}
+{% print('Jae Moon Lee!') %}
+{% elif(name == 'kitae'): %}
+{% print('Ki Tae Hwang!') %}
+{% else: %}
+{% print('Unknown') %}
+{% endif %}
+ </h2>
+ <h2>당신의 소속은 {% print(dept) %}입니다.</h2>
+</body>
+</html>
+
