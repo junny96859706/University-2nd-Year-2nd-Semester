@@ -321,3 +321,108 @@
 - 원인: 클래스명 대소문자 오타 또는 가상환경 내 opencv 패키지 설치 꼬임
 - 해결: pip uninstall opencv-python opencv-contrib-python -y 실행 후 pip install opencv-contrib-python 재설치
 
+
+=======================================================
+[6장 라즈베리파이로 웹서버 만들기 - 핵심 요약]
+=======================================================
+
+1. 웹 서버 vs 웹 응용 서버(WAS)
+- 웹 서버: HTML, CSS, 이미지 등 '정적 콘텐츠'를 브라우저에 전송
+- 웹 응용 서버(WAS): DB 연동 및 로직 실행을 통해 '동적 콘텐츠' 생성
+- 웹 서버 프레임워크: 웹 서버 + WAS 기능을 합친 라이브러리 (예: Python Flask, Django)
+
+2. 플라스크(Flask) 개요 및 기본 동작
+- 파이썬 기반의 소형 마이크로 웹 서버 프레임워크
+- URL 라우팅 테이블([URL : 실행함수])을 바탕으로 요청에 맞는 파이썬 함수 호출
+- 기본 실행: app.run(host='0.0.0.0', port=8080, debug=True)
+  * host='0.0.0.0': 외부의 모든 IP 접속 허용
+  * debug=True: 소스 수정 시 자동 재실행 및 디버깅 정보 출력
+
+3. 플라스크 필수 디렉터리 구조
+- ~/ch06/
+  ├── static/      : 정적 파일 저장 공간 (HTML, CSS, JS, 이미지 등) -> 자동 라우팅 처리
+  └── templates/   : 동적 rendering에 사용될 템플릿 HTML 파일 저장 공간
+
+4. URL 라우팅 & Variable
+- @app.route('/path/') : URL과 함수 매핑
+- 슬래시(/) 주의점:
+  * @app.route('/kitae/') 지정 시: /kitae 로 접근해도 308 리다이렉트로 정상 연결
+  * @app.route('/kitae') 지정 시: /kitae/ 로 접근하면 404 Not Found 에러 발생!
+- Variable 활용: URL 일부를 함수의 매개변수로 전달
+  * 예: @app.route('/withdraw/<int:money>/') -> 함수 def bank(money): 로 정수값 전달
+  * 변환 타입: int, float, path, uuid
+
+5. 템플릿 HTML과 render_template()
+- render_template('hello.html', name=val) : templates 폴더 내 HTML에 스크립트 변수를 전달하여 동적 HTML 생성(렌더링)
+- 템플릿 스크립트 문법:
+  * {{ 변수/수식 }} : 값 출력
+  * {% 스크립트 %} : 제어문 (if, for 등)
+  * {% endif %}, {% endfor %} : 블록 종료
+
+6. 데이터 전송 방식 (GET vs POST)
+- GET 방식:
+  * 데이터를 URL 헤더(Query String: ?key=value)에 노출하여 전송
+  * 파이썬 수신: request.args['key']
+- POST 방식:
+  * 데이터를 요청 바디(Body)에 포함하여 전송
+  * 라우팅 설정: @app.route('/calc', methods=['POST'])
+  * 파이썬 수신: request.form['key']
+
+7. 원격 카메라 & CCTV 스트리밍
+- 동작 흐름: 브라우저 요청 -> cctvapp.py 실행 -> camera.py(take_picture)로 사진 촬영 -> ./static/cctv.jpg 저장 -> cctv.html 렌더링
+- 실시간 스트리밍 구현:
+  * HTML 내 <meta http-equiv="refresh" content="0.5; url={%print(request.path)%}"> 추가
+  * 0.5초마다 자동으로 페이지를 재요청하여 연속 촬영 이미지를 받아옴으로써 CCTV 스트리밍 효과 구현
+
+
+[7장 메시지 통신과 MQTT - 핵심 요약]
+
+1. MQTT 개념 및 특징
+- MQTT (Message Queuing Telemetry Transport): 경량 메시지 기반 통신 프로토콜 (TCP/IP 기반, 기본 포트: 1883)
+- 발행/구독(Publish/Subscribe) 방식:
+  * Publisher (발행자): 특정 '토픽(Topic)'으로 메시지를 브로커에 전송
+  * Subscriber (구독자): 관심 있는 '토픽'을 브로커에 등록하고, 해당 메시지가 오면 수신
+  * Broker (중계자): Publisher와 Subscriber 사이에서 메시지를 중계 (1:1, 1:N, N:M 가능)
+- 특징: 송신자와 수신자가 직접 연결되지 않고 브로커를 경유함. 열악한 네트워크 환경/IoT에 최적화.
+
+2. MQTT 패킷, 토픽 & QoS
+- 토픽 (Topic): 메시지를 구분하는 계층화된 문자열 (예: "room/1/temp")
+- QoS (Quality of Service) - 메시지 전송 품질 (Publisher/Subscriber ↔ Broker 사이):
+  * Level 0 (At most once): 최하, 확인 없이 최대 1회 전송 (손실 가능)
+  * Level 1 (At least once): 보통, 수신 확인 응답을 받음 (중복 수신 가능)
+  * Level 2 (Exactly once): 최고, 4단계 핸드셰이크로 정확히 1회 전송 보장
+
+3. 라즈베리파이 Mosquitto 브로커 설정
+- 설치: sudo apt install -y mosquitto mosquitto-clients
+- 설정 파일 (mos.conf):
+  listener 1883        # 외부 접속 허용
+  allow_anonymous true # 익명 사용자 허용
+- 실행 명령: mosquitto -v -c mos.conf (-v: 과정 상세 출력)
+- 기본 서비스 비활성화: sudo systemctl disable/stop mosquitto
+
+4. 파이썬 paho-mqtt 라이브러리 (v2 기준)
+- 설치: pip install paho-mqtt
+- 객체 생성: client = mqtt.Client(mqtt.CallbackAPIVersion.VERSION2)
+- 주요 함수:
+  * connect(ip, port=1883) : 블록킹 연결
+  * connect_async(ip, port=1883) : 넌블록킹 연결 (on_connect 콜백 필수)
+  * subscribe("topic") : 토픽 구독
+  * publish("topic", "message") : 메시지 발행
+  * disconnect() : 브로커 연결 종료
+- 주요 콜백 속성:
+  * on_connect = 함수명 : 브로커 연결 성공 시 실행
+  * on_message = 함수명 : 메시지 도착 시 실행 (msg.topic, msg.payload)
+  * on_subscribe / on_publish / on_disconnect
+
+5. 메시지 루프 (Message Loop)
+- loop() : 메시지가 있을 때 1번만 처리하는 블록킹 함수 (while True와 조합)
+- loop_forever() : 무한히 메시지 루프 실행 (블록킹, 이후 코드 실행 안 됨)
+- loop_start() / loop_stop() : 별도 스레드를 생성하여 배경에서 루프 실행 (메인 코드와 병렬 처리 가능)
+- Ping 메커니즘: 메시지 루프 사용 시 keepalive 시간 내에 ping을 자동으로 보내 연결 유지
+
+6. 라즈베리파이 ↔ 윈도우 교차 통신 응용
+- 동일 네트워크(Wi-Fi/핫스팟) 연결 필수
+- 라즈베리파이(Publisher/Subscriber) + 윈도우(Subscriber/Publisher) + Mosquitto 브로커(라즈베리파이)
+- 이미지/바이너리 전송:
+  * cv2.imencode('.jpg', frame)[1].tobytes()로 이미지 바이트화 후 publish
+  * 수신 측에서는 open(filename, "wb")로 파일 저장
