@@ -1,7 +1,6 @@
 import java.util.Scanner;
 
 public class Exam2 {
-
 	public static void main(String[] args) {
 		Scanner scanner = new Scanner(System.in);
 		
@@ -9,6 +8,9 @@ public class Exam2 {
 		int money = scanner.nextInt();
 		System.out.println("$" + money + "는 " + money*1200 + "원입니다.");
 
+		
+		// 본인이 작성하라 종료
+		
+		scanner.close();
 	}
-
 }

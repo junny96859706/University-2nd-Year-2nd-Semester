@@ -34,11 +34,6 @@ build/
 out/
 .gradle/
 
-# Eclipse configuration files (PC/환경 간 충돌 방지)
-.settings/
-.classpath
-.project
-
 # IntelliJ IDEA
 .idea/
 *.iml
