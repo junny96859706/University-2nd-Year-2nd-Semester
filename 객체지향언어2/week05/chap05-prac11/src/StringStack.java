@@ -54,7 +54,7 @@ public class StringStack implements IStack{
 			if("그만".equals(study))
 				break;
 			if(app.push(study) == false) {
-				System.out.println("스택이 꽉차서 디지털 저장 불가");
+				System.out.println("스택이 꽉차서 " + study + " 저장 불가");
 			}
 		}
 		
