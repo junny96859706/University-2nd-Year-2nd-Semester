@@ -59,7 +59,7 @@ public class StringStack implements IStack{
 		}
 		
 		System.out.print("스택에 저장된 문자열 팝 : ");
-		
+		  
 		int count = app.length();
 		for(int i=0; i < count; i++) {
 			System.out.print(app.pop() + " ");

@@ -156,24 +156,41 @@ int main(void)
     insert_vertex(&g, 3);
     insert_vertex(&g, 4);
     insert_vertex(&g, 5);
+    insert_vertex(&g, 6);
+    insert_vertex(&g, 7);
+    insert_vertex(&g, 8);
 
     // 정점 0의 인접 리스트 생성
     insert_edge(&g, 0, 2);
-    insert_edge(&g, 0, 3);
+    insert_edge(&g, 0, 4);
+    insert_edge(&g, 0, 6);
 
     // 정점 1의 인접 리스트 생성
-    insert_edge(&g, 1, 3);
-    insert_edge(&g, 1, 4);
+    insert_edge(&g, 1, 0);
+    insert_edge(&g, 1, 7);
 
     // 정점 2의 인접 리스트 생성
-    insert_edge(&g, 2, 3);
-    insert_edge(&g, 2, 5);
+    insert_edge(&g, 2, 4);
+    insert_edge(&g, 2, 6);
+    insert_edge(&g, 2, 8);
 
     // 정점 3의 인접 리스트 생성
-    insert_edge(&g, 3, 5);
+    //insert_edge(&g, 3, 5);
 
     // 정점 4의 인접 리스트 생성
-    insert_edge(&g, 4, 5);
+    insert_edge(&g, 4, 3);
+    insert_edge(&g, 4, 7);
+    insert_edge(&g, 4, 8);
+
+    insert_edge(&g, 5, 0);
+    insert_edge(&g, 5, 2);
+
+    insert_edge(&g, 6, 3);
+    insert_edge(&g, 6, 8);
+
+    insert_edge(&g, 7, 6);
+
+    insert_edge(&g, 8, 3);
 
     // 위상 정렬 실행
     printf("=== 위상 정렬 결과 ===\n");

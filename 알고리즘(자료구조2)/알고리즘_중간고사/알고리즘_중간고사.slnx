@@ -3,21 +3,21 @@
     <Platform Name="x64" />
     <Platform Name="x86" />
   </Configurations>
-  <Project Path="../10장_깊이우선탐색_인접행렬버전/10장_깊이우선탐색_인접행렬버전.vcxproj" />
-  <Project Path="../10장_너비우선탐색_인접행렬버전/10장_너비우선탐색_인접행렬버전.vcxproj" />
-  <Project Path="../10주차_연결성분_추가강의/10주차_연결성분_추가강의.vcxproj" />
-  <Project Path="../11장_dijkstra_실제경로심화/11장_dijkstra_실제경로심화.vcxproj" />
-  <Project Path="../11장_dijkstra_최단경로/11장_dijkstra_최단경로.vcxproj" />
-  <Project Path="../11장_floyd_실제경로심화/11장_floyd_실제경로심화.vcxproj" />
-  <Project Path="../11장_floyd_최단경로/11장_floyd_최단경로.vcxproj" />
-  <Project Path="../11장_kruskal_최소비용신장트리_탐욕적/11장_kruskal_최소비용신장트리_탐욕적.vcxproj" />
-  <Project Path="../11장_prim_최소비용신장트리_인접정점/11장_prim_최소비용신장트리_인접정점.vcxproj" />
-  <Project Path="../11장_위상정렬/11장_위상정렬.vcxproj" />
-  <Project Path="../8장_레벨순회/8장_레벨순회.vcxproj" />
-  <Project Path="../8장_이진탐색_영어사전/8장_이진탐색_영어사전.vcxproj" />
-  <Project Path="../8장_이진탐색트리/8장_이진탐색트리.vcxproj" />
-  <Project Path="../8장_전위,중위,후위순회(링크법)/8장_전위,중위,후위순회(링크법).vcxproj" />
-  <Project Path="../9장_최대히프/9장_최대히프.vcxproj" />
-  <Project Path="../9장_최소히프/9장_최소히프.vcxproj" />
-  <Project Path="../9장_허프만코드/9장_허프만코드.vcxproj" />
+  <Project Path="../10장_깊이우선탐색_인접행렬버전/10장_깊이우선탐색_인접행렬버전.vcxproj" Id="bcfea5bf-b7f8-4dea-ac63-dc2f01872120" />
+  <Project Path="../10장_너비우선탐색_인접행렬버전/10장_너비우선탐색_인접행렬버전.vcxproj" Id="a26b8444-9b9c-4673-8f06-60e561a18f7d" />
+  <Project Path="../10주차_연결성분_추가강의/10주차_연결성분_추가강의.vcxproj" Id="fd5c2e16-651f-4376-b5ab-9ce4b7a636ae" />
+  <Project Path="../11장_dijkstra_실제경로심화/11장_dijkstra_실제경로심화.vcxproj" Id="2732cbb6-f1dd-4893-a3cb-60016416e71a" />
+  <Project Path="../11장_dijkstra_최단경로/11장_dijkstra_최단경로.vcxproj" Id="938f32b4-2eb8-4515-a797-b1ef2f0455d0" />
+  <Project Path="../11장_floyd_실제경로심화/11장_floyd_실제경로심화.vcxproj" Id="fbc6c823-4e50-46d1-97bf-2437f1ab5e50" />
+  <Project Path="../11장_floyd_최단경로/11장_floyd_최단경로.vcxproj" Id="564c9c3c-11cd-4cd2-89ca-2f03388fea42" />
+  <Project Path="../11장_kruskal_최소비용신장트리_탐욕적/11장_kruskal_최소비용신장트리_탐욕적.vcxproj" Id="5435dc16-5a68-4a8b-bcd2-bd1a7ae359f7" />
+  <Project Path="../11장_prim_최소비용신장트리_인접정점/11장_prim_최소비용신장트리_인접정점.vcxproj" Id="7b186859-fbd3-43b4-8b9f-ea4205e3491f" />
+  <Project Path="../11장_위상정렬/11장_위상정렬.vcxproj" Id="d5de9572-1c2f-4cd5-95fc-e722c2453331" />
+  <Project Path="../8장_레벨순회/8장_레벨순회.vcxproj" Id="224320c0-75c3-40b8-9ed9-806604045e47" />
+  <Project Path="../8장_이진탐색_영어사전/8장_이진탐색_영어사전.vcxproj" Id="3b59585a-7b5a-4aa5-9b1f-2864aff07004" />
+  <Project Path="../8장_이진탐색트리/8장_이진탐색트리.vcxproj" Id="5856f57d-1db4-4137-86d3-63c2330b097a" />
+  <Project Path="../8장_전위,중위,후위순회(링크법)/8장_전위,중위,후위순회(링크법).vcxproj" Id="42b758f9-bef6-45eb-bc49-21db06929874" />
+  <Project Path="../9장_최대히프/9장_최대히프.vcxproj" Id="2d4afc5c-5be1-4deb-ad2e-e3e7bc227507" />
+  <Project Path="../9장_최소히프/9장_최소히프.vcxproj" Id="97cd59cf-94a7-4a51-ab37-496c431be4b9" />
+  <Project Path="../9장_허프만코드/9장_허프만코드.vcxproj" Id="f0dd49bc-df34-43e9-8755-2521984ecd2a" />
 </Solution>

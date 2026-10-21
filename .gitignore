@@ -12,7 +12,7 @@ x86/
 *.user
 
 # ==========================================
-# Python
+# Python & Virtual Environments
 # ==========================================
 __pycache__/
 *.py[cod]
@@ -20,24 +20,43 @@ __pycache__/
 .venv/
 env/
 venv/
+*.venv
 
 # ==========================================
-# Java & IDEs (IntelliJ, Eclipse, VS Code)
+# Java & IDEs (Eclipse, IntelliJ, VS Code)
 # ==========================================
+# Build / Compiled outputs
 *.class
 *.jar
 *.war
 bin/
 build/
+out/
 .gradle/
+
+# Eclipse configuration files (PC/환경 간 충돌 방지)
+.settings/
+.classpath
+.project
+
+# IntelliJ IDEA
 .idea/
 *.iml
-# 수정 후 (.classpath와 .project는 Git에 올라가도록 주석 처리)
-.settings/
-#.classpath
-#.project
+*.iws
+*.ipr
 
-# OS / System
+# Visual Studio Code
+.vscode/
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+
+# ==========================================
+# OS & System Files
+# ==========================================
 *.pem
 .DS_Store
 Thumbs.db
+ehthumbs.db
+Desktop.ini
