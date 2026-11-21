@@ -8,7 +8,7 @@ import javax.swing.JFrame;
 
 public class JCompEx extends JFrame{
 	public JCompEx() {
-		setTitle("공콩 메소드");
+		setTitle("공통 메소드");
 		Container c = getContentPane();
 		c.setLayout(new FlowLayout());
 		
