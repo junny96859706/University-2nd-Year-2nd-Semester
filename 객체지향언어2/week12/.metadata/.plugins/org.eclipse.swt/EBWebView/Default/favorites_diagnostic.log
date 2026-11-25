@@ -17,6 +17,7 @@
 2026-11-23 18:36:13.444: [INFO] BookmarksLoadDropped droppedNodes=0
 2026-11-23 18:36:13.444: [INFO] BookmarksSnapshot Startup total=0 bar=0 other=0 mobile=0 showBar=0 showBarNTP=1
 2026-11-23 20:14:13.986: [INFO] BookmarksSnapshot Shutdown total=0 bar=0 other=0 mobile=0 showBar=0 showBarNTP=1
+<<<<<<< HEAD
 2026-11-24 10:50:25.210: [INFO] CurrentProfilePath: C:\Users\User\OneDrive\바탕 화면\2학년2학기\객체지향언어2\week12\.metadata\.plugins\org.eclipse.swt\EBWebView\Default
 2026-11-24 10:50:25.210: [INFO] Profiles total count: 1
 2026-11-24 10:50:25.210: [INFO] Profile: name=프로필 1 path=C:\Users\User\OneDrive\바탕 화면\2학년2학기\객체지향언어2\week12\.metadata\.plugins\org.eclipse.swt\EBWebView\Default lastActive=2026-11-23T18:36:04.236Z
@@ -27,3 +28,85 @@
 2026-11-24 10:50:25.210: [INFO] BookmarksLoadDropped droppedNodes=0
 2026-11-24 10:50:25.210: [INFO] BookmarksSnapshot Startup total=0 bar=0 other=0 mobile=0 showBar=0 showBarNTP=1
 2026-11-24 12:56:37.343: [INFO] BookmarksSnapshot Shutdown total=0 bar=0 other=0 mobile=0 showBar=0 showBarNTP=1
+=======
+2026-11-25 02:14:16.090: [INFO] CurrentProfilePath: C:\2학년2학기\객체지향언어2\week12\.metadata\.plugins\org.eclipse.swt\EBWebView\Default
+2026-11-25 02:14:16.090: [INFO] Profiles total count: 1
+2026-11-25 02:14:16.090: [INFO] Profile: name=프로필 1 path=C:\2학년2학기\객체지향언어2\week12\.metadata\.plugins\org.eclipse.swt\EBWebView\Default lastActive=2026-11-23T18:36:04.236Z
+2026-11-25 02:14:16.090: [INFO] LastUsedProfileDir: C:\2학년2학기\객체지향언어2\week12\.metadata\.plugins\org.eclipse.swt\EBWebView\Default
+2026-11-25 02:14:16.090: [INFO] MostRecentlyActiveProfile: name=프로필 1 path=C:\2학년2학기\객체지향언어2\week12\.metadata\.plugins\org.eclipse.swt\EBWebView\Default lastActive=2026-11-23T18:36:04.236Z
+2026-11-25 02:14:16.090: [INFO] OnDoneLoading sync enabled: 0
+2026-11-25 02:14:16.090: [INFO] BookmarkModelLoaded, ids_reassigned: 0
+2026-11-25 02:14:16.090: [INFO] BookmarksLoadDropped droppedNodes=0
+2026-11-25 02:14:16.090: [INFO] BookmarksSnapshot Startup total=0 bar=0 other=0 mobile=0 showBar=0 showBarNTP=1
+2026-11-25 02:14:24.544: [INFO] BookmarksSnapshot Shutdown total=0 bar=0 other=0 mobile=0 showBar=0 showBarNTP=1
+2026-11-25 03:59:36.009: [INFO] CurrentProfilePath: C:\2학년2학기\객체지향언어2\week12\.metadata\.plugins\org.eclipse.swt\EBWebView\Default
+2026-11-25 03:59:36.009: [INFO] Profiles total count: 1
+2026-11-25 03:59:36.009: [INFO] Profile: name=프로필 1 path=C:\2학년2학기\객체지향언어2\week12\.metadata\.plugins\org.eclipse.swt\EBWebView\Default lastActive=2026-11-23T18:36:04.236Z
+2026-11-25 03:59:36.009: [INFO] LastUsedProfileDir: C:\2학년2학기\객체지향언어2\week12\.metadata\.plugins\org.eclipse.swt\EBWebView\Default
+2026-11-25 03:59:36.009: [INFO] MostRecentlyActiveProfile: name=프로필 1 path=C:\2학년2학기\객체지향언어2\week12\.metadata\.plugins\org.eclipse.swt\EBWebView\Default lastActive=2026-11-23T18:36:04.236Z
+2026-11-25 03:59:36.009: [INFO] OnDoneLoading sync enabled: 0
+2026-11-25 03:59:36.009: [INFO] BookmarkModelLoaded, ids_reassigned: 0
+2026-11-25 03:59:36.009: [INFO] BookmarksLoadDropped droppedNodes=0
+2026-11-25 03:59:36.009: [INFO] BookmarksSnapshot Startup total=0 bar=0 other=0 mobile=0 showBar=0 showBarNTP=1
+2026-11-25 03:59:40.983: [INFO] BookmarksSnapshot Shutdown total=0 bar=0 other=0 mobile=0 showBar=0 showBarNTP=1
+2026-11-25 04:05:58.984: [INFO] CurrentProfilePath: C:\2학년2학기\객체지향언어2\week12\.metadata\.plugins\org.eclipse.swt\EBWebView\Default
+2026-11-25 04:05:58.984: [INFO] Profiles total count: 1
+2026-11-25 04:05:58.984: [INFO] Profile: name=프로필 1 path=C:\2학년2학기\객체지향언어2\week12\.metadata\.plugins\org.eclipse.swt\EBWebView\Default lastActive=2026-11-25T03:59:40.509Z
+2026-11-25 04:05:58.984: [INFO] LastUsedProfileDir: C:\2학년2학기\객체지향언어2\week12\.metadata\.plugins\org.eclipse.swt\EBWebView\Default
+2026-11-25 04:05:58.984: [INFO] MostRecentlyActiveProfile: name=프로필 1 path=C:\2학년2학기\객체지향언어2\week12\.metadata\.plugins\org.eclipse.swt\EBWebView\Default lastActive=2026-11-25T03:59:40.509Z
+2026-11-25 04:05:58.984: [INFO] OnDoneLoading sync enabled: 0
+2026-11-25 04:05:58.984: [INFO] BookmarkModelLoaded, ids_reassigned: 0
+2026-11-25 04:05:58.984: [INFO] BookmarksLoadDropped droppedNodes=0
+2026-11-25 04:05:58.984: [INFO] BookmarksSnapshot Startup total=0 bar=0 other=0 mobile=0 showBar=0 showBarNTP=1
+2026-11-25 04:06:04.578: [INFO] BookmarksSnapshot Shutdown total=0 bar=0 other=0 mobile=0 showBar=0 showBarNTP=1
+2026-11-25 04:09:19.186: [INFO] CurrentProfilePath: C:\2학년2학기\객체지향언어2\week12\.metadata\.plugins\org.eclipse.swt\EBWebView\Default
+2026-11-25 04:09:19.186: [INFO] Profiles total count: 1
+2026-11-25 04:09:19.186: [INFO] Profile: name=프로필 1 path=C:\2학년2학기\객체지향언어2\week12\.metadata\.plugins\org.eclipse.swt\EBWebView\Default lastActive=2026-11-25T03:59:40.509Z
+2026-11-25 04:09:19.186: [INFO] LastUsedProfileDir: C:\2학년2학기\객체지향언어2\week12\.metadata\.plugins\org.eclipse.swt\EBWebView\Default
+2026-11-25 04:09:19.186: [INFO] MostRecentlyActiveProfile: name=프로필 1 path=C:\2학년2학기\객체지향언어2\week12\.metadata\.plugins\org.eclipse.swt\EBWebView\Default lastActive=2026-11-25T03:59:40.509Z
+2026-11-25 04:09:19.186: [INFO] OnDoneLoading sync enabled: 0
+2026-11-25 04:09:19.186: [INFO] BookmarkModelLoaded, ids_reassigned: 0
+2026-11-25 04:09:19.186: [INFO] BookmarksLoadDropped droppedNodes=0
+2026-11-25 04:09:19.186: [INFO] BookmarksSnapshot Startup total=0 bar=0 other=0 mobile=0 showBar=0 showBarNTP=1
+2026-11-25 04:14:09.942: [INFO] BookmarksSnapshot Shutdown total=0 bar=0 other=0 mobile=0 showBar=0 showBarNTP=1
+2026-11-25 04:17:12.407: [INFO] CurrentProfilePath: C:\2학년2학기\객체지향언어2\week12\.metadata\.plugins\org.eclipse.swt\EBWebView\Default
+2026-11-25 04:17:12.407: [INFO] Profiles total count: 1
+2026-11-25 04:17:12.407: [INFO] Profile: name=프로필 1 path=C:\2학년2학기\객체지향언어2\week12\.metadata\.plugins\org.eclipse.swt\EBWebView\Default lastActive=2026-11-25T03:59:40.509Z
+2026-11-25 04:17:12.407: [INFO] LastUsedProfileDir: C:\2학년2학기\객체지향언어2\week12\.metadata\.plugins\org.eclipse.swt\EBWebView\Default
+2026-11-25 04:17:12.407: [INFO] MostRecentlyActiveProfile: name=프로필 1 path=C:\2학년2학기\객체지향언어2\week12\.metadata\.plugins\org.eclipse.swt\EBWebView\Default lastActive=2026-11-25T03:59:40.509Z
+2026-11-25 04:17:12.407: [INFO] OnDoneLoading sync enabled: 0
+2026-11-25 04:17:12.407: [INFO] BookmarkModelLoaded, ids_reassigned: 0
+2026-11-25 04:17:12.407: [INFO] BookmarksLoadDropped droppedNodes=0
+2026-11-25 04:17:12.407: [INFO] BookmarksSnapshot Startup total=0 bar=0 other=0 mobile=0 showBar=0 showBarNTP=1
+2026-11-25 04:17:16.559: [INFO] BookmarksSnapshot Shutdown total=0 bar=0 other=0 mobile=0 showBar=0 showBarNTP=1
+2026-11-25 04:33:10.941: [INFO] CurrentProfilePath: C:\2학년2학기\객체지향언어2\week12\.metadata\.plugins\org.eclipse.swt\EBWebView\Default
+2026-11-25 04:33:10.941: [INFO] Profiles total count: 1
+2026-11-25 04:33:10.941: [INFO] Profile: name=프로필 1 path=C:\2학년2학기\객체지향언어2\week12\.metadata\.plugins\org.eclipse.swt\EBWebView\Default lastActive=2026-11-25T03:59:40.509Z
+2026-11-25 04:33:10.941: [INFO] LastUsedProfileDir: C:\2학년2학기\객체지향언어2\week12\.metadata\.plugins\org.eclipse.swt\EBWebView\Default
+2026-11-25 04:33:10.941: [INFO] MostRecentlyActiveProfile: name=프로필 1 path=C:\2학년2학기\객체지향언어2\week12\.metadata\.plugins\org.eclipse.swt\EBWebView\Default lastActive=2026-11-25T03:59:40.509Z
+2026-11-25 04:33:10.941: [INFO] OnDoneLoading sync enabled: 0
+2026-11-25 04:33:10.941: [INFO] BookmarkModelLoaded, ids_reassigned: 0
+2026-11-25 04:33:10.941: [INFO] BookmarksLoadDropped droppedNodes=0
+2026-11-25 04:33:10.941: [INFO] BookmarksSnapshot Startup total=0 bar=0 other=0 mobile=0 showBar=0 showBarNTP=1
+2026-11-25 04:33:23.997: [INFO] BookmarksSnapshot Shutdown total=0 bar=0 other=0 mobile=0 showBar=0 showBarNTP=1
+2026-11-25 04:34:18.147: [INFO] CurrentProfilePath: C:\2학년2학기\객체지향언어2\week12\.metadata\.plugins\org.eclipse.swt\EBWebView\Default
+2026-11-25 04:34:18.147: [INFO] Profiles total count: 1
+2026-11-25 04:34:18.147: [INFO] Profile: name=프로필 1 path=C:\2학년2학기\객체지향언어2\week12\.metadata\.plugins\org.eclipse.swt\EBWebView\Default lastActive=2026-11-25T03:59:40.509Z
+2026-11-25 04:34:18.147: [INFO] LastUsedProfileDir: C:\2학년2학기\객체지향언어2\week12\.metadata\.plugins\org.eclipse.swt\EBWebView\Default
+2026-11-25 04:34:18.147: [INFO] MostRecentlyActiveProfile: name=프로필 1 path=C:\2학년2학기\객체지향언어2\week12\.metadata\.plugins\org.eclipse.swt\EBWebView\Default lastActive=2026-11-25T03:59:40.509Z
+2026-11-25 04:34:18.147: [INFO] OnDoneLoading sync enabled: 0
+2026-11-25 04:34:18.147: [INFO] BookmarkModelLoaded, ids_reassigned: 0
+2026-11-25 04:34:18.147: [INFO] BookmarksLoadDropped droppedNodes=0
+2026-11-25 04:34:18.147: [INFO] BookmarksSnapshot Startup total=0 bar=0 other=0 mobile=0 showBar=0 showBarNTP=1
+2026-11-25 04:34:44.192: [INFO] BookmarksSnapshot Shutdown total=0 bar=0 other=0 mobile=0 showBar=0 showBarNTP=1
+2026-11-25 04:36:00.458: [INFO] CurrentProfilePath: C:\2학년2학기\객체지향언어2\week12\.metadata\.plugins\org.eclipse.swt\EBWebView\Default
+2026-11-25 04:36:00.458: [INFO] Profiles total count: 1
+2026-11-25 04:36:00.458: [INFO] Profile: name=프로필 1 path=C:\2학년2학기\객체지향언어2\week12\.metadata\.plugins\org.eclipse.swt\EBWebView\Default lastActive=2026-11-25T03:59:40.509Z
+2026-11-25 04:36:00.458: [INFO] LastUsedProfileDir: C:\2학년2학기\객체지향언어2\week12\.metadata\.plugins\org.eclipse.swt\EBWebView\Default
+2026-11-25 04:36:00.458: [INFO] MostRecentlyActiveProfile: name=프로필 1 path=C:\2학년2학기\객체지향언어2\week12\.metadata\.plugins\org.eclipse.swt\EBWebView\Default lastActive=2026-11-25T03:59:40.509Z
+2026-11-25 04:36:00.458: [INFO] OnDoneLoading sync enabled: 0
+2026-11-25 04:36:00.458: [INFO] BookmarkModelLoaded, ids_reassigned: 0
+2026-11-25 04:36:00.458: [INFO] BookmarksLoadDropped droppedNodes=0
+2026-11-25 04:36:00.458: [INFO] BookmarksSnapshot Startup total=0 bar=0 other=0 mobile=0 showBar=0 showBarNTP=1
+2026-11-25 11:07:02.226: [INFO] BookmarksSnapshot Shutdown total=0 bar=0 other=0 mobile=0 showBar=0 showBarNTP=1
+>>>>>>> 9f68cc6d88cd1d7d848a25e75503c20aa73bdd18
